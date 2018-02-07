@@ -1,6 +1,6 @@
 from nltk import corpus
 from sys import stdout
-from corpus_reader_tfidf import CorpusReader_TFIDF
+from corpus_reader_tfidf import CorpusReaderTFIDF
 
 
 # outputs tfidf matrix and cosine similarities for a given corpus
@@ -28,6 +28,6 @@ def process(corpus_reader, name):
             print f1, f2, ':', round(corpus_reader.cosine_sim([f1, f2]), 4)
 
 
-process(CorpusReader_TFIDF(corpus=corpus.brown), "brown")
-process(CorpusReader_TFIDF(corpus=corpus.shakespeare), "shakespeare")
-process(CorpusReader_TFIDF(corpus=corpus.state_union), "state of the union")
+#process(CorpusReaderTFIDF(corpus=corpus.brown), "brown")
+process(CorpusReaderTFIDF(corpus=corpus.shakespeare), "shakespeare")
+#process(CorpusReaderTFIDF(corpus=corpus.state_union), "state of the union")

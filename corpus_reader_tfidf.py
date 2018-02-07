@@ -4,7 +4,7 @@ from nltk.stem import PorterStemmer
 from nltk.corpus import stopwords
 
 
-class CorpusReader_TFIDF:
+class CorpusReaderTFIDF:
 
     # constructs a CorpusReader_TFIDF object with given attributes
     def __init__(self, corpus=None, tf="raw",
