@@ -28,6 +28,4 @@ def process(corpus_reader, name):
             print f1, f2, ':', round(corpus_reader.cosine_sim([f1, f2]), 4)
 
 
-#process(CorpusReaderTFIDF(corpus=corpus.brown), "brown")
 process(CorpusReaderTFIDF(corpus=corpus.shakespeare), "shakespeare")
-#process(CorpusReaderTFIDF(corpus=corpus.state_union), "state of the union")
