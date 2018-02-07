@@ -1,5 +1,5 @@
 # nltk-tfidf
-Simple class for calculation TF-IDF matrix for NLTK python library
+Simple class for calculation TF-IDF matrix for a corpus
 ## Example
 Print cosine similarities between all pairs of documents in the corpus:
 ```python
